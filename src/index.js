@@ -11,8 +11,8 @@ const Counter = () => {
     <div id="container">
       <div id="navbar">Counter.js</div>
       <div id="counter">
-        <h1>0</h1>
-        <button>Increment</button>
+        <h1>{count}</h1>
+        <button onClick={increment}>Increment</button>
       </div>
     </div>
   );
