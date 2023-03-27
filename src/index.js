@@ -1,9 +1,12 @@
 // Your code here!
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
-ReactDOM.render(<Counter />, document.getElementById("app"));
 
 const Counter = () => {
+  const [count, setCount] = useState(0);
+  const increment = () => {
+    setCount(count + 1);
+  };
   return (
     <div id="container">
       <div id="navbar">Counter.js</div>
@@ -14,3 +17,5 @@ const Counter = () => {
     </div>
   );
 };
+
+ReactDOM.render(<Counter />, document.getElementById("app"));
